@@ -1,0 +1,25 @@
+.todo-item {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 600;
+    color: purple;
+    border-radius: 9px;
+    justify-content: space-between;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.todo-item:hover {
+    /* background-color: aqua; */
+    transition: all ease-in;
+}
+.todo-item i:hover {
+    color: red;
+    transition: 1s ease;
+    transform: scale(2);
+}

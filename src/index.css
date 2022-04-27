@@ -16,12 +16,14 @@ code {
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .container {
     /* background-color: rgb(163, 211, 237); */
     border: 1px solid black;
     margin-top: 20px;
-    width: 600px;
+    width: 90%;
     min-width: 400px;
     display: flex;
     align-items: center;
@@ -78,24 +80,14 @@ button {
     margin-left: 10px;
     /* box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3); */
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
-    animation-name: rotateBtn;
-}
-
-@keyframes rotateBtn {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(30deg);
-    }
 }
 
 button:hover {
     background-color: #20bf6b;
     transition: 0.3s;
     box-shadow: none;
-    transform: rotate(360deg);
-    -webkit-transition: all 1s;
+    transform: rotate(180deg);
+    -webkit-transition: all 0.5s;
 }
 ul {
     margin-top: 30px;
@@ -104,7 +96,7 @@ ul {
     /* padding: 6px; */
 }
 ul li {
-    padding-left: 0px;
+    padding-left: 20px;
     text-align: left;
     font-size: 20px;
     font-weight: 500;
@@ -113,4 +105,14 @@ ul li {
     align-items: center;
     color: #8566aa;
     text-transform: capitalize;
+}
+.list {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    /* border: 1px solid black; */
+    margin-bottom: 39px;
 }
