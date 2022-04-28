@@ -1,4 +1,4 @@
-import "./todoItems.css";
+import "../css/todoItems.css";
 
 const ToDoItems = (props) => {
     // console.log("my prop - ", props);

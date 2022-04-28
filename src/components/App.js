@@ -69,7 +69,7 @@ function App() {
         console.log("item deleted");
         setItems((oldItems) => {
             return oldItems.filter((arrItem, index) => {
-                return id != arrItem.id;
+                return id !== arrItem.id;
             });
         });
         fetch("https://jsonplaceholder.typicode.com/todos/" + id, {
@@ -84,7 +84,7 @@ function App() {
         // newid = updateId;
         setUpdateList();
         items.map((elem) => {
-            if (elem.id == updateId) {
+            if (elem.id === updateId) {
                 setUpdateList(elem.title);
             }
             return elem;
@@ -96,7 +96,7 @@ function App() {
         console.log(updateId, updateList);
         setItems(
             items.map((elem) => {
-                if (elem.id == updateId) {
+                if (elem.id === updateId) {
                     elem.title = updateList;
                 }
                 return elem;
