@@ -2,10 +2,15 @@ import { useEffect, useState } from "react";
 import ToDoItems from "./ToDoItems";
 
 function App() {
+    //input list contains text of input text field
     const [inputList, setInputList] = useState("");
+    //update list contains text of update text field
     const [updateList, setUpdateList] = useState("hello");
+    //items array contains objects recieved from api
     const [items, setItems] = useState([]);
+    // to toggle the update input field
     const [toggle, setToggle] = useState(false);
+    // to save the update id to use it in other functions
     const [updateId, setUpdateId] = useState();
 
     //input value change when we write on input field
@@ -17,10 +22,12 @@ function App() {
         setUpdateList(e.target.value);
     };
 
+    //call the api
     useEffect(() => {
         getData();
     }, []);
 
+    //getting data from api
     const getData = async () => {
         const response = await fetch(
             `https://jsonplaceholder.typicode.com/todos`
